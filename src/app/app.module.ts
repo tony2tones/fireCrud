@@ -2,6 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from "./app.component";
 import { EmployeeComponent } from "./employees/employee/employee.component";
@@ -13,14 +14,15 @@ import { EmployeesService } from "./shared/employees.service";
 @NgModule({
   declarations: [
     AppComponent,
+    EmployeesComponent,
     EmployeeComponent,
     EmployeeListComponent,
-    EmployeesComponent,
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+    FormsModule
   ],
   providers: [EmployeesService],
   bootstrap: [AppComponent],
