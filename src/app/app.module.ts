@@ -18,9 +18,9 @@ import { EmployeesService } from "./shared/employees.service";
     EmployeesComponent,
   ],
   imports: [
+    BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    BrowserModule,
   ],
   providers: [EmployeesService],
   bootstrap: [AppComponent],
