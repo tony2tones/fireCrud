@@ -10,6 +10,7 @@
         placeholder="full name"
         required
       />
+      <div *ngIf="fullName.invalid && fullName.touched" class="validation-error">This field is required</div>
     </div>
     <div class="form-group">
       <input
