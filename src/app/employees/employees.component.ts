@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrModule } from 'ngx-toastr';
 
 @Component({
   selector: 'app-employees',
@@ -7,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeesComponent implements OnInit {
 
-  constructor() { }
 
   ngOnInit() {
   }
