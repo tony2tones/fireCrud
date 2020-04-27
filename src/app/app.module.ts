@@ -3,6 +3,8 @@ import { NgModule } from "@angular/core";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from "./app.component";
 import { EmployeeComponent } from "./employees/employee/employee.component";
@@ -20,9 +22,11 @@ import { EmployeesService } from "./shared/employees.service";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    FormsModule
+    FormsModule  
   ],
   providers: [EmployeesService],
   bootstrap: [AppComponent],
