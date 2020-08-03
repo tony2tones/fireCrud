@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig : {
+  firebaseConfig: {
     apiKey: "AIzaSyCED5kxEKN2lD5C24qQDNH7dL3pzuIkbkU",
     authDomain: "fir-social-886a6.firebaseapp.com",
     databaseURL: "https://fir-social-886a6.firebaseio.com",
@@ -12,7 +12,8 @@ export const environment = {
     storageBucket: "fir-social-886a6.appspot.com",
     messagingSenderId: "707728488480",
     appId: "1:707728488480:web:5ddcf2ab6af8214430a445"
-};
+  }
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
@@ -31,4 +32,4 @@ export const environment = {
 //   messagingSenderId: "432400484551",
 //   appId: "1:432400484551:web:236e4cb9e27314e93756e2",
 //   measurementId: "G-1JZVJ4HTNX"
-// },
+// },*/
