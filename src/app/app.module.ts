@@ -8,23 +8,11 @@ import { ToastrModule } from 'ngx-toastr';
 import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { EmployeeComponent } from "./employees/employee/employee.component";
-import { EmployeeListComponent } from "./employees/employee-list/employee-list.component";
-import { EmployeesComponent } from "./employees/employees.component";
 import { environment } from "src/environments/environment";
-import { EmployeesService } from "./shared/employees.service";
-import { OrdersComponent } from './orders/orders.component';
-import { OrderListComponent } from './order-list/order-list.component';
-
+import { CrudService } from './crud-service.service';
 @NgModule({
   declarations: [
-    AppComponent,
-    EmployeesComponent,
-    EmployeeComponent,
-    EmployeeListComponent,
-    OrdersComponent,
-    OrderListComponent,
-  ],
+    AppComponent],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
@@ -32,9 +20,9 @@ import { OrderListComponent } from './order-list/order-list.component';
     ToastrModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    FormsModule  
+    FormsModule
   ],
-  providers: [EmployeesService],
+  providers: [CrudService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
